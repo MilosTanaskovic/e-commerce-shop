@@ -16,6 +16,8 @@
 
 - React Router [react-router](https://reactrouter.com/web/guides/quick-start)
   - npm i react-router-dom
+  - BrowserRouter
+  - Switch, Route, Link
 
 - [GoogleFonts](https://fonts.google.com/?query=Lexend+pe)
   - Open Sans Condensed
