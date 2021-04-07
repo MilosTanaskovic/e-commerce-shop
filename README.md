@@ -18,6 +18,7 @@
   - npm i react-router-dom
   - BrowserRouter
   - Switch, Route, Link
+  - withRouter (HOC)
 
 - [GoogleFonts](https://fonts.google.com/?query=Lexend+pe)
   - Open Sans Condensed

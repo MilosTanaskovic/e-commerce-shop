@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Route, Switch } from 'react-router-dom';
 
-import HomePage from './pages/homepage/Homepage';
+import HomePage from './pages/homepage/HomePage';
 import HatsPage from './pages/hatspage/HatsPage';
 
 import './App.css';
