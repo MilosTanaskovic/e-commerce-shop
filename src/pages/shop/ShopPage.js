@@ -3,6 +3,8 @@ import SHOP_DATA from '../../data/shop.data.js';
 
 import CollectionsItems from '../collections/CollectionsItems';
 
+import TestSwiper from './TestSwiper';
+
 /**
 * @author Milos Tanaskovic
 * @class ShopPage
@@ -20,13 +22,16 @@ class ShopPage extends Component {
  render() {
   const { collections } = this.state;
   return(
-     <div className="shop-page">
-      {
-       collections.map(({ id, ...otherCollectionsProps }) => (
-        <CollectionsItems key={id} {...otherCollectionsProps} />
-       ))
-      }
-     </div>
+    <>
+      <TestSwiper />
+      <div className="shop-page">
+        {
+        collections.map(({ id, ...otherCollectionsProps }) => (
+          <CollectionsItems key={id} {...otherCollectionsProps} />
+        ))
+        }
+      </div>
+    </>
     )
    }
  }

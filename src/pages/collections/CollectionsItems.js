@@ -17,7 +17,7 @@ const CollectionsItems = (props) => {
       <span>f</span>
       {
        items
-        .filter((item, index) => index < 4)
+        //.filter((item, index) => index < 4)
         .map(({ id, ...otherItemProps }) => (
          <CollectionsItem key={id} {...otherItemProps}  />
         ))

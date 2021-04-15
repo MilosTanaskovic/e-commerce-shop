@@ -23,6 +23,8 @@
 - [GoogleFonts](https://fonts.google.com/?query=Lexend+pe)
   - Open Sans Condensed
   - Lexend Peta
+  
+- [Swiper.js](https://swiperjs.com/react)  Most Modern Mobile Touch Slider
 
 
 ## folder structure for the project
