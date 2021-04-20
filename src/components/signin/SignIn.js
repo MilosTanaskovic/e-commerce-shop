@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import FormInput from '../form-inputs/FormInput';
 import CustomButtom from '../custom-buttons/CustomButton';
+import { signInWithGoogle } from '../../firebase/utils';
 
 import './SignInStyle.scss';
 /**
@@ -63,6 +64,7 @@ class SignIn extends Component {
       />
 
       <CustomButtom type="submit" >Sign In</CustomButtom>
+      <CustomButtom onClick={signInWithGoogle} >Sign In With Google</CustomButtom>
      </form>
     </div>
     )
