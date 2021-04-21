@@ -8,9 +8,9 @@ import './CustomButton.scss';
 **/
 
 const CustomButton = (props) => {
- const { children, ...otherProps} = props
+ const { children, isGooleSignIn, ...otherProps} = props
   return(
-    <button className="custom-button" {...otherProps}>
+    <button className={`${isGooleSignIn ? 'google-sign-in' : ''} custom-button`} {...otherProps}>
      {children}
     </button>
    )

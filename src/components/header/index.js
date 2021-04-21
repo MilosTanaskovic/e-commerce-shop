@@ -10,12 +10,13 @@ import './index.scss';
 **/
 
 const index = (props) => {
+  const { currentUser } = props;
   return(
     <div className="header">
      {/* Logo */}
      <Logo />
      {/* Menu Items */}
-     <MenuNav />
+     <MenuNav currentUser={currentUser} />
     </div>
    )
   }
