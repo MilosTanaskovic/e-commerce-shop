@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import FormInput from '../form-inputs/FormInput';
 import CustomButtom from '../custom-buttons/CustomButton';
-import { signInWithGoogle } from '../../firebase/utils';
+import { auth, signInWithGoogle } from '../../firebase/utils';
 
 import './SignInStyle.scss';
 /**
@@ -22,13 +22,20 @@ class SignIn extends Component {
  }
 
  // onSubmit func
- handleSubmit = event => {
+ handleSubmit = async event => {
   event.preventDefault();
 
-  this.setState({
-   email: '',
-   password: ''
-  });
+  const { email, password } = this.state;
+
+  try{
+    await auth.signInWithEmailAndPassword(email, password);
+    this.setState({
+      email: '',
+      password: ''
+    });
+  }catch(error) {
+    console.error(error);
+  }
  } 
  // onchange func
  handleChange = event => {
