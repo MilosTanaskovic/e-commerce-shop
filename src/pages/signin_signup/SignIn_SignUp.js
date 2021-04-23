@@ -1,6 +1,7 @@
 import React from 'react'
 
 import SignIn from '../../components/signin/SignIn';
+import SignUp from '../../components/signup/SignUp';
 
 import './SignIn_SignUpStyle.scss';
 /**
@@ -10,8 +11,9 @@ import './SignIn_SignUpStyle.scss';
 
 const SignIn_SignUp = (props) => {
   return(
-    <div>
+    <div className="signin_signup">
       <SignIn />
+      <SignUp />
     </div>
    )
   }
